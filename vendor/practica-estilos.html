@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- CSS: Hojas de estilos en cascadas -->
+  <!-- selector: {} -->
+  <!--¿que es un selector? = a quien le afecta los atributos estilos  -->
+  <!-- etiqueta {}, .unaclase {}, #identificador {} ,*{}-->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    /* #solo se puede usar una vez*/
+    #titulo{
+      color: aquamarine;
+      text-align: center;
+      text-transform: uppercase;/*Mayusculas*/
+      font-weight: bold;/*Negrita*/
+    }
+    /*le afecta a todas las etiquetas <p>*/
+    p{
+      color: red;
+      text-align: center; 
+      font-style: italic;
+      margin-top: 2em;/* 1em = 16px = 1M */
+      margin-bottom: 4em;
+    }
+    /*Clase que puede heredarse muchas veces*/
+    .importante{
+      background-color: bisque;/*color de fondo*/
+      border: 3px dashed blue;/*ancho,estilos(dotted,solid,duble,dashed) y color*/
+      padding: 1em; /*espacio interno*/
+    }
+    .caja{
+      background-color: beige;
+      display: inline-block;/* MOSTRAR */
+      height:60px;/* ALTO */
+      padding-top: 40px;
+      text-align: center;
+      width: 100px;
+      
+    }
+    .fondoimg{
+      background-image: url('./images/goku_normal.webp');
+      background-size: auto;
+      background-position: center;
+    }
+  </style>
+
+  <h1 id="titulo">Fundamentos CSS</h1>
+
+<!-- atributo: valor; atributo; valor -->
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ipsam vitae provident ab placeat modi, 
+    eveniet cumque, officia, ducimus quidem deserunt eos reiciendis.
+    Pariatur, est. Sed earum ex totam dolores excepturi.
+  </p>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, assumenda. Quo perspiciatis maxime fuga sed quisquam voluptatibus 
+    cupiditate placeat provident beatae eos aperiam numquam quidem quaerat, repellat quae soluta pariatur.
+  </p>
+
+  <p class="importante fondoimg">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Ipsam vitae provident ab placeat modi, 
+    eveniet cumque, officia, ducimus quidem deserunt eos reiciendis.
+    Pariatur, est. Sed earum ex totam dolores excepturi.
+  </p>
+  <hr> <!-- linea horizontal -->
+  <br><!-- salto de linea -->
+
+  <div class="caja">
+    Caja 1
+  </div>
+  <div class="caja">
+    Caja 2
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #263238;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CONTENEDOR
+   ========================= */
+
+.contenedor {
+    width: 100%;
+    max-width: 550px;
+}
+
+
+/* =========================
+   FORMULARIO
+   ========================= */
+
+.formulario {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+
+    /* Sombra suave y plana */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #263238;
+    font-size: 28px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #78909c;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CAMPOS
+   ========================= */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #455a64;
+}
+
+
+/* =========================
+   INPUT, SELECT Y TEXTAREA
+   ========================= */
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cfd8dc;
+    border-radius: 6px;
+
+    background-color: #ffffff;
+    color: #263238;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* Placeholder */
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #b0bec5;
+}
+
+
+/* =========================
+   CONTROL ACTIVO
+   ========================= */
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #1976d2;
+
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+
+    background-color: #fafcff;
+}
+
+
+/* =========================
+   TEXTAREA
+   ========================= */
+
+.campo textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =========================
+   BOTÓN
+   ========================= */
+
+button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #1976d2;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Hover */
+
+button:hover {
+    background-color: #1565c0;
+}
+
+
+/* Cuando se presiona */
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+/* Cuando el botón recibe foco */
+
+button:focus {
+    outline: none;
+
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.25);
+}
+
+
+/* =========================
+   ESTADO DEL ENTER
+   ========================= */
+
+.estado {
+    margin-top: 15px;
+    text-align: center;
+
+    color: #1976d2;
+    font-size: 14px;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .formulario {
+        padding: 25px 20px;
+    }
+
+    .formulario h1 {
+        font-size: 24px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        padding: 14px;
+    }
+}
+
+
+/* Para pantallas muy pequeñas */
+
+@media (max-width: 350px) {
+
+    .formulario {
+        padding: 20px 15px;
+    }
+
+    .formulario h1 {
+        font-size: 21px;
+    }
+}
